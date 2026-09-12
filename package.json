@@ -1,0 +1,15 @@
+{
+  "name": "ipon-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ipon Local — a local-first personal money tracker.",
+  "main": "main.js",
+  "author": "rainuel",
+  "scripts": {
+    "start": "npx --yes serve . -l 3000",
+    "build:win": "npx --yes electron-packager . \"Ipon Local\" --platform=win32 --arch=x64 --electron-version=44.3.0 --out=dist --overwrite --icon=assets/iconNoBG.ico --ignore=dist --ignore=README.md --ignore=LICENSE",
+    "build:mac": "npx --yes electron-packager . \"Ipon Local\" --platform=darwin --arch=arm64 --electron-version=44.3.0 --out=dist --overwrite --icon=assets/iconNoBG.ico --ignore=dist --ignore=README.md --ignore=LICENSE",
+    "build:linux": "npx --yes electron-packager . \"Ipon Local\" --platform=linux --arch=x64 --electron-version=44.3.0 --out=dist --overwrite --icon=assets/iconNoBG.ico --ignore=dist --ignore=README.md --ignore=LICENSE"
+  },
+  "license": "MIT"
+}

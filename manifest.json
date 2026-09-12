@@ -1,0 +1,10 @@
+{
+  "name": "Ipon Local — Finance Tracker",
+  "short_name": "Ipon Local",
+  "description": "A local-first personal money tracker. Your data stays on your device.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f4ef",
+  "theme_color": "#17332b",
+  "icons": []
+}
