@@ -11,7 +11,7 @@ export async function seedDefaultAccountIfNeeded() {
     id: makeId(),
     name: "Cash in Hand",
     type: "cash",
-    initialBalanceCentavos: "", 
+    initialBalanceCentavos: 0, 
     archived: false,
     createdAt: new Date().toISOString(),
   });
