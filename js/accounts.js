@@ -2,7 +2,7 @@ import { getAll, putOne, removeOne, makeId } from "./database.js";
 
 export const ACCOUNT_TYPES = ["cash", "bank", "ewallet", "other"];
 
-/** Creates the very first account a new user sees: Cash in Hand, ₱1,000. */
+/** Creates the very first account a new user sees: Cash in Hand, ₱0. */
 export async function seedDefaultAccountIfNeeded() {
   const existing = await getAll("accounts");
   if (existing.length > 0) return;
